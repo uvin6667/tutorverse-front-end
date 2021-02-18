@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-navigation',
   templateUrl: './navigation.component.html',
-  styleUrls: ['./navigation.component.css']
+  styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent {
 
@@ -16,6 +17,33 @@ export class NavigationComponent {
       shareReplay()
     );
 
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  constructor(private breakpointObserver: BreakpointObserver, private route: Router) {}
 
+  loadContact(): void {
+    this.route.navigateByUrl('/contact');
+    console.log('dfgsfg');
+  }
+
+  loadHome(): void {
+    this.route.navigateByUrl('/home');
+  }
+
+  loadAllAdds(): void {
+    this.route.navigateByUrl('/all-ads');
+
+  }
+
+  loadTeachers(): void {
+    this.route.navigateByUrl('/teachers');
+
+  }
+
+  loadInstitutes(): void {
+    this.route.navigateByUrl('/institutes');
+
+  }
+
+  loadPostAd(): void {
+    this.route.navigateByUrl('/post-ad');
+  }
 }

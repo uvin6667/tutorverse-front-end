@@ -14,12 +14,23 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
+import { ContactComponent } from './contact/contact.component';
+import {AppRouterModule} from './app.router.module';
+import {InstitutesComponent} from './institutes/institutes.component';
+import {TeachersComponent} from './teachers/teachers.component';
+import {PostAdComponent} from './post-ad/post-ad.component';
+import {AllAdsComponent} from './all-ads/all-ads.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
-    DashboardComponent
+    DashboardComponent,
+    ContactComponent,
+    InstitutesComponent,
+    TeachersComponent,
+    PostAdComponent,
+    AllAdsComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +43,8 @@ import { MatMenuModule } from '@angular/material/menu';
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    AppRouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
