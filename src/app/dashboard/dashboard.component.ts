@@ -29,5 +29,5 @@ export class DashboardComponent {
       ];
     })
   );
-  constructor(private breakpointObserver: BreakpointObserver, private router: Router) {}
+  constructor(private breakpointObserver: BreakpointObserver) {}
 }

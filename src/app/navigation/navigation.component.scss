@@ -16,10 +16,6 @@
   z-index: 1;
 }
 
-svg{
-  width: 70px;
-}
-
 #contact-toolbar{
   padding-left: 250px;
   font-size: 16px;
@@ -29,12 +25,11 @@ svg{
   }
 }
 
-.logo-area{
-  padding-left: 100px;
-}
+
 
 #post-ad-nav{
-  background-color: yellow;
+  background-color: red;
+  color: white;
 }
 
 @media (max-width: 768px) {
@@ -42,5 +37,31 @@ svg{
     visibility: hidden;
   }
 }
+
+::ng-deep #footer{
+  p{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+::ng-deep #main-toolbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .login-btn{
+    color: gold;
+    i{
+      padding: 5px;
+    }
+  }
+  svg{
+    width: 70px;
+  }
+
+
+
+}
+
 
 
