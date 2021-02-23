@@ -20,6 +20,11 @@ import {InstitutesComponent} from './institutes/institutes.component';
 import {TeachersComponent} from './teachers/teachers.component';
 import {PostAdComponent} from './post-ad/post-ad.component';
 import {AllAdsComponent} from './all-ads/all-ads.component';
+import {AboutUsComponent} from './about-us/about-us.component';
+import { TermsAndConditionsComponent } from './terms-and-conditions/terms-and-conditions.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { HowItWorksComponent } from './how-it-works/how-it-works.component';
+import { FaqComponent } from './faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +35,12 @@ import {AllAdsComponent} from './all-ads/all-ads.component';
     InstitutesComponent,
     TeachersComponent,
     PostAdComponent,
-    AllAdsComponent
+    AllAdsComponent,
+    AboutUsComponent,
+    TermsAndConditionsComponent,
+    PrivacyPolicyComponent,
+    HowItWorksComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,

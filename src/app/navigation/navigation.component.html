@@ -5,12 +5,12 @@
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item (click)="loadHome()" >Home</a>
-      <a mat-list-item (click)="loadAllAdds()" >All Ads</a>
-      <a mat-list-item (click)="loadTeachers()" >Teachers</a>
-      <a mat-list-item (click)="loadInstitutes()" >Institutes</a>
-      <a mat-list-item (click)="loadContact()" >Contact</a>
-      <a mat-list-item (click)="loadPostAd()" id="post-ad-nav">Post Your Ad</a>
+      <a mat-list-item routerLink="/home" >Home</a>
+      <a mat-list-item routerLink="/all-ads" >All Ads</a>
+      <a mat-list-item routerLink="/teachers" >Teachers</a>
+      <a mat-list-item routerLink="/institutes" >Institutes</a>
+      <a mat-list-item routerLink="/contact" >Contact</a>
+      <a mat-list-item routerLink="/post-ad" id="post-ad-nav">Post Your Ad</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -39,24 +39,24 @@
     </mat-toolbar>
     <router-outlet></router-outlet>
 
-    <mat-toolbar color="accent" id="footer-top">
+    <mat-toolbar id="footer-top">
       <div class="container">
         <div class="row">
           <div class="footer-box">
             <h3 class="">About us</h3>
             <ul class="">
-              <li><a href="https://www.tutorverse.lk/about-us.html">About us</a></li>
-              <li><a href="https://www.tutorverse.lk/terms-and-conditions.html">Terms & Conditions</a></li>
-              <li><a href="https://www.tutorverse.lk/privacy-policy.html">Privacy Policy</a></li>
+              <li><a routerLink="/about-us">About us</a></li>
+              <li><a routerLink="/terms-and-conditions">Terms & Conditions</a></li>
+              <li><a routerLink="/privacy-policy">Privacy Policy</a></li>
             </ul>
           </div>
 
           <div class="footer-box">
             <h3 class="">Help & Support</h3>
             <ul class="">
-              <li><a href="https://www.tutorverse.lk/how-it-works.html">How it Works?</a></li>
-              <li><a href="https://www.tutorverse.lk/frequently-asked-questions.html">FAQs</a></li>
-              <li><a href="https://www.tutorverse.lk/contact-us.html">Contact us</a></li>
+              <li><a routerLink="/how-it-works">How it Works?</a></li>
+              <li><a routerLink="/faq">FAQs</a></li>
+              <li><a routerLink="/contact">Contact us</a></li>
             </ul>
           </div>
 

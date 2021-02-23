@@ -19,7 +19,7 @@ export class NavigationComponent {
 
   constructor(private breakpointObserver: BreakpointObserver, private route: Router) {}
 
-  loadContact(): void {
+  /*loadContact(): void {
     this.route.navigateByUrl('/contact');
     console.log('dfgsfg');
   }
@@ -46,4 +46,24 @@ export class NavigationComponent {
   loadPostAd(): void {
     this.route.navigateByUrl('/post-ad');
   }
+
+  loadAboutUs(): void {
+    this.route.navigateByUrl('/about-us');
+  }
+
+  loadTermsAndConditions(): void {
+    this.route.navigateByUrl('/terms-and-conditions');
+  }
+
+  loadPrivacyPolicy(): void {
+    this.route.navigateByUrl('/privacy-policy');
+  }
+
+  loadHowItWorks(): void {
+    this.route.navigateByUrl('/how-it-works');
+  }
+
+  loadFaq(): void {
+    this.route.navigateByUrl('/faq');
+  }*/
 }

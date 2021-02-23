@@ -1,0 +1,90 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+#contact-toolbar {
+  padding-left: 250px;
+  font-size: 16px;
+  height: 30px;
+}
+#contact-toolbar p {
+  padding-top: 7px;
+}
+
+#post-ad-nav {
+  background-color: red;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  #contact-toolbar {
+    visibility: hidden;
+  }
+}
+::ng-deep #footer-bottom {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+::ng-deep #footer-bottom p {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+::ng-deep #main-toolbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+::ng-deep #main-toolbar .login-btn {
+  color: gold;
+}
+::ng-deep #main-toolbar .login-btn i {
+  padding: 5px;
+}
+::ng-deep #main-toolbar svg {
+  width: 70px;
+}
+
+::ng-deep #footer-top {
+  height: 130px;
+  background-color: purple;
+}
+::ng-deep #footer-top .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+::ng-deep #footer-top .row {
+  margin: 0;
+}
+::ng-deep #footer-top .footer-box {
+  margin: 0 40px 0 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+::ng-deep #footer-top .footer-box li {
+  list-style-type: none;
+}
+::ng-deep #footer-top .footer-box li a {
+  color: gold;
+}
+
+/*# sourceMappingURL=navigation.component.css.map */
